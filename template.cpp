@@ -38,8 +38,8 @@ typedef complex<double> vec2;
 #define RFOR(i, a, b) for (int i = (int)(b) - 1; i >= (int)(a); i--)
 #define REP(i, n) FOR(i, 0, n)
 #define RREP(i, n) RFOR(i, 0, n)
-#define REPit(type, i, obj) for (type::iterator i = (obj).begin(); i != (obj).end(); i++)
-#define RREPit(type, i, obj) for (type::iterator i = (obj).rbegin(); i != (obj).rend(); i++)
+#define REPit(i, obj) for (auto i = (obj).begin(); i != (obj).end(); i++)
+#define RREPit(i, obj) for (auto i = (obj).rbegin(); i != (obj).rend(); i++)
 
 // short
 #define pb push_back
