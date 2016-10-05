@@ -42,7 +42,7 @@ typedef complex<double> vec2;
 #define RREPit(i, obj) for (auto i = (obj).rbegin(); i != (obj).rend(); i++)
 
 // short
-#define pb push_back
+#define pb emplace_back
 #define mp make_pair
 #define fst first
 #define sec second
