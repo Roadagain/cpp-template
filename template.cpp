@@ -24,14 +24,14 @@ const double PI = acos(-1);
 const double EPS = 1e-14;
 
 // typedef
-typedef long long ll;
-typedef unsigned long long ull;
-typedef vector<int> vi;
-typedef vector<ll> vl;
-typedef vector<double> vd;
-typedef pair<int, int> pii;
-typedef pair<double, double> pdd;
-typedef complex<double> vec2;
+using ll   = long long;
+using ull  = unsigned long long;
+using vi   = vector<int>;
+using vl   = vector<ll>;
+using vd   = vector<double>;
+using pii  = pair<int, int>;
+using pdd  = pair<double, double>;
+using vec2 = complex<double>;
 
 // repetition
 #define FOR(i, a, b) for (int i = (int)(a); i < (int)(b); i++)
