@@ -18,9 +18,9 @@ using namespace std;
 //                                                    \______/
 
 // constant
-const int INF = (int)1e9;
-const int MOD = (int)1e9 + 7;
-const double PI = acos(-1);
+const int INF    = (int)1e9;
+const int MOD    = (int)1e9 + 7;
+const double PI  = acos(-1);
 const double EPS = 1e-14;
 
 // typedef
