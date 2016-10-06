@@ -53,6 +53,7 @@ template <class T = int> inline vector<T> in(int n){ vector<T> v(n); REP(i, n) v
 template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); }
 #define inl in<ll>
 #define ind in<double>
+#define ins in<string>
 
 // container util
 #define all(obj) (obj).begin(), (obj).end()
