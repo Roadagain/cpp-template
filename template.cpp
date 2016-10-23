@@ -67,8 +67,8 @@ template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); 
 #define CLEARY(ary) memset((ary), 0, sizeof(ary))
 
 // print util
-#define PRINT(x) cout << (x) << endl
-#define PRINTD(x, d) cout << fixed << setprecision(d) << (x) << endl
+template <class T> inline void print(const T& x){ cout << x << endl; }
+template <class T> inline void printd(const T& x, int d){ cout << fixed << setprecision(d) << x << endl; }
 template <class T> inline void printv(vector<T>& v){ int n = sz(v); REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
 template <class T> inline void printv(vector<T>& v, int n){ REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
 template <class T> inline void printa(T* ary, int n){ REP(i, n) cout << ary[i] << "\n "[i < n - 1]; }
