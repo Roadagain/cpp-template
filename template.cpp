@@ -60,9 +60,9 @@ template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); 
 // container util
 #define ALL(obj) (obj).begin(), (obj).end()
 #define RALL(obj) (obj).rbegin(), (obj).rend()
-#define SZ(obj) obj.size()
+#define SZ(obj) (obj).size()
 #define SZA(ary) (sizeof(ary) / sizeof(*ary))
-#define SORT(obj) sort(all(obj))
+#define SORT(obj) sort(ALL(obj))
 #define EXIST(obj, key) ((obj).find(key) != (obj).end())
 #define CLEARY(ary) memset((ary), 0, sizeof(ary))
 
