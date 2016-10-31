@@ -37,12 +37,12 @@ using pdd  = pair<double, double>;
 using vec2 = complex<double>;
 
 // repetition
-#define FOR(i, a, b) for (int i = (int)(a); i < (int)(b); i++)
-#define RFOR(i, a, b) for (int i = (int)(b) - 1; i >= (int)(a); i--)
+#define FOR(i, a, b) for (int i = (int)(a); i < (int)(b); ++i)
+#define RFOR(i, a, b) for (int i = (int)(b) - 1; i >= (int)(a); --i)
 #define REP(i, n) FOR(i, 0, n)
 #define RREP(i, n) RFOR(i, 0, n)
-#define REPIT(i, obj) for (auto i = (obj).begin(); i != (obj).end(); i++)
-#define RREPIT(i, obj) for (auto i = (obj).rbegin(); i != (obj).rend(); i++)
+#define REPIT(i, obj) for (auto i = (obj).begin(); i != (obj).end(); ++i)
+#define RREPIT(i, obj) for (auto i = (obj).rbegin(); i != (obj).rend(); ++i)
 
 // short
 #define pb emplace_back
