@@ -25,7 +25,7 @@ const double PI  = acos(-1);
 const double EPS = 1e-14;
 /* }}} */
 /* typedef {{{ */
-template <class T> using vec<T> = vector<T>;
+template <class T> using vec = vector<T>;
 using ll   = long long;
 using ull  = unsigned long long;
 using vi   = vec<int>;
