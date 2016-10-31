@@ -28,7 +28,7 @@ const int    MOD = (int)1e9 + 7;
 const double PI  = acos(-1);
 const double EPS = 1e-14;
 /* }}} */
-/* typedef {{{ */
+/* alias {{{ */
 template <class T> using vec = vector<T>;
 using ll   = long long;
 using ull  = unsigned long long;
