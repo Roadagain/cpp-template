@@ -26,11 +26,12 @@ const double PI  = acos(-1);
 const double EPS = 1e-14;
 
 // typedef
+template <class T> using vec<T> = vector<T>;
 using ll   = long long;
 using ull  = unsigned long long;
-using vi   = vector<int>;
-using vl   = vector<ll>;
-using vd   = vector<double>;
+using vi   = vec<int>;
+using vl   = vec<ll>;
+using vd   = vec<double>;
 using pii  = pair<int, int>;
 using pdd  = pair<double, double>;
 using vec2 = complex<double>;
@@ -51,7 +52,7 @@ using vec2 = complex<double>;
 
 // input
 template <class T = int> inline T in(){ T x; cin >> x; return x; }
-template <class T = int> inline vector<T> in(int n){ vector<T> v(n); REP(i, n) v[i] = in<T>(); return v; }
+template <class T = int> inline vec<T> in(int n){ vec<T> v(n); REP(i, n) v[i] = in<T>(); return v; }
 template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); }
 #define inl in<ll>
 #define ind in<double>
@@ -69,8 +70,8 @@ template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); 
 // print util
 template <class T> inline void print(const T& x){ cout << x << endl; }
 template <class T> inline void printd(const T& x, int d){ cout << fixed << setprecision(d) << x << endl; }
-template <class T> inline void printv(vector<T>& v){ int n = sz(v); REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
-template <class T> inline void printv(vector<T>& v, int n){ REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
+template <class T> inline void printv(vec<T>& v){ int n = sz(v); REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
+template <class T> inline void printv(vec<T>& v, int n){ REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
 template <class T> inline void printa(T* ary, int n){ REP(i, n) cout << ary[i] << "\n "[i < n - 1]; }
 #define DUMP(x) cerr << #x << ": " << (x) << endl
 #define DEBUG(x) cerr << #x << ": " << (x) << " (" << __LINE__ << ")" << endl
