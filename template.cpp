@@ -63,10 +63,12 @@ template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); 
 /* }}} */
 /* container util {{{ */
 #define ALL(obj) (obj).begin(), (obj).end()
+#define ALLA(ary, n) (ary), ((ary) + (n))
 #define RALL(obj) (obj).rbegin(), (obj).rend()
 #define SZ(obj) (obj).size()
 #define SZA(ary) (sizeof(ary) / sizeof(*ary))
 #define SORT(obj) sort(ALL(obj))
+#define SORTA(ary, n) sort(ALLA(ary, n))
 #define EXIST(obj, key) ((obj).find(key) != (obj).end())
 #define CLEARY(ary) memset((ary), 0, sizeof(ary))
 /* }}} */
