@@ -75,7 +75,7 @@ template <class T = int> inline void in(T* x, int n){ REP(i, n) x[i] = in<T>(); 
 /* print util {{{ */
 template <class T> inline void print(const T& x){ cout << x << '\n'; }
 template <class T> inline void printd(const T& x, int d){ cout << fixed << setprecision(d) << x << '\n'; }
-template <class T> inline void printv(vec<T>& v){ int n = sz(v); REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
+template <class T> inline void printv(vec<T>& v){ int n = SZ(v); REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
 template <class T> inline void printv(vec<T>& v, int n){ REP(i, n) cout << v[i] << "\n "[i < n - 1]; }
 template <class T> inline void printa(T* ary, int n){ REP(i, n) cout << ary[i] << "\n "[i < n - 1]; }
 #define DUMP(x) cerr << #x << ": " << (x) << '\n'
