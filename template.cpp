@@ -38,6 +38,8 @@ using vd   = vec<double>;
 using pii  = pair<int, int>;
 using pdd  = pair<double, double>;
 using vec2 = complex<double>;
+using si   = set<int>;
+using mii  = map<int, int>;
 /* }}} */
 /* repetition {{{ */
 #define FOR(i, a, b) for (int i = (int)(a); i < (int)(b); ++i)
